@@ -16,10 +16,10 @@
   position: absolute;
   @include box;
   background-image: url('gradient.jpg');
-
+  -webkit-user-select: text;
   opacity: 0;
 
-  @include animation(bgscroll 11s infinite ease-in);
+  @include animation(bgscroll 13s infinite ease-in);
   @include transition(opacity 1s ease-out);
 }
 
@@ -34,10 +34,11 @@
   @include box;
   background-image: url('mask.png');
   pointer-events: none;
+  -webkit-user-select: text;
 }
 
 #logo {
   position: relative;
   @include box;
-  pointer-events: none;
+  -webkit-user-select: none;
 }
