@@ -1,0 +1,61 @@
+@-webkit-keyframes bgscroll {
+  from {
+    background-position: 0 0; }
+
+  to {
+    background-position: -1418px 0; } }
+
+@-moz-keyframes bgscroll {
+  from {
+    background-position: 0 0; }
+
+  to {
+    background-position: -1418px 0; } }
+
+@-o-keyframes bgscroll {
+  from {
+    background-position: 0 0; }
+
+  to {
+    background-position: -1418px 0; } }
+
+@keyframes bgscroll {
+  from {
+    background-position: 0 0; }
+
+  to {
+    background-position: -1418px 0; } }
+
+#blend {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 624px;
+  height: 142px;
+  background-image: url("gradient.jpg");
+  opacity: 0;
+  -webkit-animation: bgscroll 13s infinite ease-in;
+  -moz-animation: bgscroll 13s infinite ease-in;
+  animation: bgscroll 13s infinite ease-in;
+  -webkit-transition: opacity 1s ease-out;
+  -moz-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out; }
+
+#blend:hover {
+  opacity: 1;
+  -webkit-transition: opacity 1.5s ease-in;
+  -moz-transition: opacity 1.5s ease-in;
+  transition: opacity 1.5s ease-in; }
+
+#mask {
+  position: relative;
+  z-index: 10;
+  width: 624px;
+  height: 142px;
+  background-image: url("mask.png");
+  pointer-events: none; }
+
+#logo {
+  position: relative;
+  width: 624px;
+  height: 142px; }
