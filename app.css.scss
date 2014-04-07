@@ -39,4 +39,5 @@
 #logo {
   position: relative;
   @include box;
+  pointer-events: none;
 }
